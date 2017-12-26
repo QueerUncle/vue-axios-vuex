@@ -11,8 +11,6 @@ class Ax {
     
     this.method=method
     
-    this.heads=heads || ""
-    
   }
   
   ajaxfn(params){

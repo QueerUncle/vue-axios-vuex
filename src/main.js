@@ -5,10 +5,14 @@ import App from './App'
 import router from './router'
 import store from './vuex'
 import axios from 'axios'
+import {Ax} from '../static/util/ajax'
 
 Vue.prototype.$ajax = axios
+Vue.prototype.$Ax = new Ax('get');
 
 // Vue.use(axios)
+
+console.log('$ax',this.$Ax)
 
 
 Vue.config.productionTip = false

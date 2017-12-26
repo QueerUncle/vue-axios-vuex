@@ -19,10 +19,12 @@
       <li @click = "vuexFn">vuex事件测试</li>
       <li>{{$store.state.count}}</li>
       <li @click = "axiosfN">axios_CLIAK</li>
+      <li @click = "echartsFN">echarts</li>
     </ul>
     <ul>
       <li v-for="(item,index) in arr">{{item.title}}</li>
     </ul>
+    <!--<router-view></router-view>-->
   </div>
 </template>
 
@@ -47,6 +49,10 @@ export default {
 
       console.log(this.$store.state.count);
 
+    },
+    echartsFN(){
+
+        this.$router.push('/echarts');
     },
 //    axiosfN(){
 //
