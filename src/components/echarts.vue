@@ -13,6 +13,10 @@
 
     <div id="map" style="width: 100%;height: 500px;float: left;margin-left: 50px;margin-top: 50px;"></div>
 
+    <div style = "height:800px;">
+      <iframe src="http://123.126.88.137:8080/cal" frameborder="0"    style = "width:100%;height:100%;" ></iframe>
+    </div>
+
   </div>
 
 </template>
