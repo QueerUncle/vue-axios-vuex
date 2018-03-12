@@ -3,6 +3,8 @@
  */
 import axios from './http.js'
 
+import qs from 'qs'
+
 class Ax {
   
   constructor(url,method,heads){

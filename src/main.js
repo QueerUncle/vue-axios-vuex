@@ -6,10 +6,13 @@ import router from './router'
 import store from './vuex'
 import axios from 'axios'
 import {Ax} from '../static/util/ajax'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.prototype.$ajax = axios
 Vue.prototype.$Ax = new Ax('get');
 
+Vue.use(ElementUI);
 // Vue.use(axios)
 
 console.log('$ax',this.$Ax)
@@ -19,9 +22,10 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  el: '#ppp',
   router,
-  template: '<App/>',
+  // template: '<App/>',
   store,
-  components: { App }
+  components: { App },
+  render:h=>h(App)
 })
