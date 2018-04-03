@@ -7,6 +7,7 @@ import store from './vuex'
 import axios from 'axios'
 import {Ax} from '../static/util/ajax'
 import ElementUI from 'element-ui';
+import 'lib-flexible/flexible'
 import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.prototype.$ajax = axios

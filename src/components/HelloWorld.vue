@@ -24,6 +24,9 @@
     <ul>
       <li v-for="(item,index) in arr">{{item.title}}</li>
     </ul>
+    <div class = "boxDiv">
+      <span>奥术大师大奥术大师大所大所大所多奥术大师大所大所大所多奥术大师大所大所大所多萨达所大所大所大所大所多萨达所大所大所大撒所多撒大大撒所大所多撒大所大所大所多撒多</span>
+    </div>
     <!--<router-view></router-view>-->
   </div>
 </template>
@@ -194,6 +197,7 @@ export default {
 <style scoped>
 h1, h2 {
   font-weight: normal;
+  font-size: 0.1rem;
 }
 ul {
   list-style-type: none;
@@ -206,4 +210,14 @@ li {
 a {
   color: #42b983;
 }
+  .boxDiv{
+    width:100%;
+    height:80px;
+    background: pink;
+  }
+  .boxDiv span{
+
+    font-size: 31px;
+
+  }
 </style>
